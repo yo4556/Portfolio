@@ -1,215 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Portfolio de Yoan Deloustal, développeur créatif junior et étudiant en Métiers du Multimédia et de l'Internet (MMI)">
-  <meta name="keywords" content="développeur web, portfolio, multimedia, MMI, créatif, Yoan Deloustal">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="css/icon.svg">
-  <title>Yoan Deloustal | Développeur junior</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deloustal Yoan | Développeur Junior Full Stack</title>
+  <meta name="description" content="Portfolio de Deloustal Yoan, développeur junior Full Stack basé à Troyes.">
+  <link rel="icon" href="content/icons/favicon.svg" type="image/svg+xml">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header id="slide0">
-    <div class="video-container">
-      <video class="video" autoplay muted loop playsinline>
-        <source src="content/nyan.mp4" type="video/mp4">
-      </video>
-      <div class="overlay">
-        <h1>Yoan DELOUSTAL</h1>
-        <h3>Développeur créatif junior</h3>
-        <a class="slide" href="#about"><i class="fas fa-chevron-down"></i> À propos de moi</a>
-      </div>
-    </div>
+  <header id=header-main>
+    <nav aria-label="Menu principal" id=nav-bar><a href=# class=id-logo-text aria-label=Accueil id=yd><img alt="" height=42 src=/content/icons/favicon.svg width=42 id=logo> <span>Deloustal Yoan</span></a>
+      <ul class=nav-links>
+        <li><a href=content/Deloustal_Yoan_CV.pdf class=link download>Mon CV</a>
+        <li><a href=#skills class=link>Compétences</a>
+        <li><a href=#projects class=link>Projets</a>
+        <li><a href=#contact class=link>Contact</a>
+      </ul>
+    </nav>
   </header>
-
-  <nav class="main-nav">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">Yoan Deloustal</a>
-      <div class="hamburger" id="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="nav-links">
-        <a href="#about">À propos</a>
-        <a href="#slide">Projets</a>
-        <a href="#slide2">Contact</a>
-      </div>
-    </div>
+  <nav aria-label=Raccourcis id=nav-sidebar>
+    <ul>
+      <li><a href=#about-me class=link-sidebar aria-label="À propos"><img alt="" height=22 src=/content/icons/profil.svg width=22 class=icon-sidebar></a>
+      <li><a href=#skills class=link-sidebar aria-label=Compétences><img alt="" height=22 src=/content/icons/skills.svg width=22 class=icon-sidebar></a>
+      <li><a href=#projects class=link-sidebar aria-label=Projets><img alt="" height=22 src=/content/icons/project.svg width=22 class=icon-sidebar></a>
+      <li><a href=#contact class=link-sidebar aria-label=Contact><img alt="" height=22 src=/content/icons/contact.svg width=22 class=icon-sidebar></a>
+    </ul>
   </nav>
-
-  <section id="about">
-    <h2>À propos de moi</h2>
-    <div class="about-content">
-      <div class="about-text">
-        <p>Je suis Yoan Deloustal, étudiant en Métiers du Multimédia et de l'Internet (MMI), avec un intérêt particulier pour le développement web. Je me forme aux différentes compétences du numérique, allant de l'intégration front-end au développement back-end, en passant par la gestion de projets et le design web.</p>
-        <div class="skills">
-          <div class="skill-category">
-            <h4><i class="fas fa-code"></i> Développement</h4>
-            <div class="skill-list">
-              <span>HTML/CSS</span>
-              <span>JavaScript</span>
-              <span>PHP</span>
-              <span>MySQL</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4><i class="fas fa-paint-brush"></i> Design</h4>
-            <div class="skill-list">
-              <span>Photoshop</span>
-              <span>Illustrator</span>
-              <span>Figma</span>
-              <span>UI/UX</span>
-            </div>
-          </div>
+  <a href=#header-main aria-label="Retour en haut" id=back-to-top>
+    <div id=arrow><svg height=56 width=56 aria-hidden=true id=circle>
+        <circle cx=28 cy=28 fill=none r=24 stroke=rgba(255,255,255,0.1) stroke-width=3></circle>
+        <circle cx=28 cy=28 fill=none r=24 stroke=#818cf8 stroke-width=3 id=progress stroke-dasharray=150 stroke-dashoffset=150 transform="rotate(-90 28 28)"></circle>
+      </svg> <img alt="" height=18 src=/content/icons/arrow.svg width=18></div>
+  </a>
+  <main>
+    <section class=reveal id=about-me>
+      <div class=hero-content>
+        <div class=hero-text>
+          <h1>Deloustal <span class=text-gradient>Yoan</span></h1>
+          <p class=role>Développeur Junior (Full Stack)</p>
+          <p class="description">Étudiant en deuxième année de <strong>BUT MMI à Troyes</strong>, je me prépare à devenir développeur Full Stack en maîtrisant un large éventail de technologies, allant de l’hébergement et du back-end au front-end et au développement de jeux, etc... .</p>
+          <div class=hero-btns><a href=#skills id=btn-skills>Voir mes compétences</a></div>
         </div>
-      </div>
-    </div>
-    <a class="slide" href="#slide"><i class="fas fa-project-diagram"></i> Voir mes projets</a>
-  </section>
-
-  <main id="slide">
-    <div class="projects-intro">
-      <h2>Mes réalisations</h2>
-      <p>
-        En tant que développeur créatif junior, j'ai acquis de l'expérience à travers plusieurs projets personnels et
-        académiques. Voici une sélection de réalisations :
-      </p>
-    </div>
-    <div id="real">
-      <a href="travaux/projet1.html">
-        <div class="projets1">
-          <div class="project-overlay">
-            <h3>Site personnel</h3>
-            <p>Conception et développement de mon site portfolio</p>
-            <span class="view-project">Voir le projet <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-      </a>
-      <a href="travaux/projet2.html">
-        <div class="projets2">
-          <div class="project-overlay">
-            <h3>SAE 203</h3>
-            <p>Projet académique axé sur le développement web</p>
-            <span class="view-project">Voir le projet <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="projets3">
-          <div class="project-overlay">
-            <h3>En cours</h3>
-            <p>Projet en développement actuel</p>
-            <span class="view-project">Bientôt disponible <i class="fas fa-hourglass-half"></i></span>
-          </div>
-        </div>
-      </a>
-    </div>
-    <a class="slide" href="#slide2"><i class="fas fa-envelope"></i> Contactez-moi</a>
-  </main>
-
-  <footer id="slide2">
-    <section id="contact">
-      <h2 id="formulaire">Me contacter</h2>
-
-      <div class="contact-container">
-        <div class="contact-form-wrapper">
-          <form action="send_mail.php" method="POST" class="contact-form">
-            <div class="form-group">
-              <label for="name"><i class="fas fa-user"></i> Nom</label>
-              <input type="text" id="name" name="name" placeholder="Votre nom" required>
-            </div>
-            <div class="form-group">
-              <label for="email"><i class="fas fa-envelope"></i> Email</label>
-              <input type="email" id="email" name="email" placeholder="Votre email" required>
-            </div>
-            <div class="form-group">
-              <label for="message"><i class="fas fa-comment"></i> Message</label>
-              <textarea id="message" name="message" placeholder="Votre message" required></textarea>
-            </div>
-            <input type="text" name="website" style="display: none">
-            <button type="submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
-          </form>
-        </div>
-
-        <div class="contact-info-wrapper">
-          <div class="footer-contact-info">
-            <h3>Coordonnées</h3>
-            <div class="contact-info-list">
-              <p><i class="fas fa-envelope"></i> <strong>Email :</strong> <a href="mailto:yoandeloustal45@gmail.com">yoandeloustal45@gmail.com</a></p>
-              <p><i class="fab fa-linkedin"></i> <strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/yoan-deloustal-a10045337/" target="_blank" rel="noopener noreferrer">Yoan Deloustal</a></p>
-              <p><i class="fas fa-map-marker-alt"></i> <strong>Localisation :</strong> Troyes</p>
-            </div>
-
-            <div class="contact-divider"></div>
-
-            <div class="contact-social">
-              <h4>Mon réseau professionnel</h4>
-              <div class="contact-social-icons">
-                <a href="https://www.linkedin.com/in/yoan-deloustal-a10045337/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class=hero-image><img alt="Photo de Yoan Deloustal" height=450 src=content/me.jpg width=450 fetchpriority=high></div>
       </div>
     </section>
-
-    <div class="footer-bottom">
-      <div class="footer-container">
-        <p>&copy; 2025 Deloustal Yoan. Tous droits réservés.</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/yoan-deloustal-a10045337/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-        </div>
+    <div class=reveal id=skills>
+      <div class=carousel-container>
+        <div class=carousel-track id=carouselTrack></div>
       </div>
     </div>
+    <section class=reveal id=projects>
+      <h2 class=section-title>Mes Réalisations</h2>
+      <div class=project-grid>
+        <article class="project-card">
+          <a href="https://sae301.mmi24c04.mmi-troyes.fr" class="project-link">
+            <div class="project-img" style="background:url(content/projets/p1.jpg) center/cover" aria-label="Projet Nail'sPro" role="img"></div>
+            <div class="project-info">
+              <h3>SAE301 | Nail'sPro</h3>
+              <p>Développement d'un site vitrine avec prise de rendez-vous pour une prothésiste ongulaire fictive.</p>
+              <div class="tags"><span>Html</span><span>Css</span><span>JavaScript</span><span>Symfony</span><span>SQL</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a href="https://sae303.mmi24c04.mmi-troyes.fr" class="project-link">
+            <div class="project-img" style="background:url(content/projets/p2.jpg) center/cover" aria-label="Projet Calculatrice Python" role="img"></div>
+            <div class="project-info">
+              <h3>SAE303 | DataRail</h3>
+              <p>Calculateur de temps de trajet / consommation de carburant et affichage des données fournies.</p>
+              <div class="tags"><span>Html</span><span>Css</span><span>JavaScript</span><span>API</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a href="https://mmi24c04.mmi-troyes.fr/unity/exo1/" class="project-link">
+            <div class="project-img" style="background:url(content/projets/p3.jpg) center/cover" aria-label="Projet Jeu de Plateau" role="img"></div>
+            <div class="project-info">
+              <h3>Jeu de voiture</h3>
+              <p>Création d'un jeu de voiture |<br>PROJET ENCORE EN DEVELOPPEMENT</p>
+              <div class="tags"><span>Unity</span><span>Blender</span><span>C#</span></div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+    <section class=reveal id=contact>
+      <div class=contact-card>
+        <h2 class=section-title>Contactez-moi</h2>
+        <form action=contact.php enctype=multipart/form-data id=contact-form method=POST>
+          <div class=form-group><input id=nom name=nom placeholder="Nom *" required> <input id=email name=email
+              placeholder="Email *" required type=email></div><textarea id=msg name=message
+            placeholder="Votre message *" required rows=5></textarea>
+          <div class=drop-zone id=drop-zone><input id=fichier name=pj type=file accept=".jpg, .jpeg, .png, .pdf"
+              style="display:none">
+            <div class=drop-zone-content><svg height=32 width=32 fill=none stroke=currentColor stroke-width=2
+                viewBox="0 0 24 24" class=drop-icon>
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1=12 x2=12 y1=3 y2=15></line>
+              </svg>
+              <p class=drop-text><span class=drop-highlight>Joindre un fichier</span> ou glisser-déposer</p>
+            </div>
+            <div class=file-preview style="display:none"><span class=file-name></span> <button type=button aria-label=Supprimer class=file-remove><svg height=16 width=16 fill=none stroke=currentColor
+                  stroke-width=2 viewBox="0 0 24 24">
+                  <line x1=18 x2=6 y1=6 y2=18></line>
+                  <line x1=6 x2=18 y1=6 y2=18></line>
+                </svg></button></div>
+          </div><button type=submit id=btn-submit>Envoyer le message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Deloustal Yoan | Développeur Junior</p>
   </footer>
-
-  <!-- Bouton retour en haut de page fixe -->
-  <a href="#slide0" class="back-to-top" id="backToTop">
-    <i class="fas fa-arrow-up"></i>
-  </a>
-
-  <script>
-    // Navigation collante
-    window.addEventListener('scroll', function() {
-      const nav = document.querySelector('.main-nav');
-      if (window.scrollY > 100) {
-        nav.classList.add('nav-scrolled');
-      } else {
-        nav.classList.remove('nav-scrolled');
-      }
-
-      // Afficher/cacher le bouton de retour en haut
-      const backToTop = document.getElementById('backToTop');
-      if (window.scrollY > 300) {
-        backToTop.classList.add('visible');
-      } else {
-        backToTop.classList.remove('visible');
-      }
-    });
-
-    // Hamburger menu
-    const hamburger = document.getElementById('hamburger-menu');
-    const nav = document.querySelector('.main-nav');
-    const navLinks = document.querySelectorAll('.nav-links a');
-
-    // Toggle menu when hamburger is clicked
-    hamburger.addEventListener('click', function() {
-      nav.classList.toggle('nav-open');
-      document.body.classList.toggle('menu-open');
-    });
-
-    // Close menu when a nav link is clicked
-    navLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        nav.classList.remove('nav-open');
-        document.body.classList.remove('menu-open');
-      });
-    });
-  </script>
+  <script defer src=js/script.js></script>
 </body>
 </html>
