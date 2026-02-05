@@ -8,8 +8,8 @@
   <meta name="keywords" content="développeur web, portfolio, multimedia, MMI, créatif, Yoan Deloustal">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="content/favicon.png">
-  <title>Portfolio - Yoan Deloustal | Développeur Créatif</title>
+  <link rel="icon" type="image/png" href="css/icon.svg">
+  <title>Yoan Deloustal | Développeur junior</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
 
   <nav class="main-nav">
     <div class="nav-container">
-      <a href="#slide0" class="nav-logo">Yoan Deloustal</a>
+      <a href="#" class="nav-logo">Yoan Deloustal</a>
       <div class="hamburger" id="hamburger-menu">
         <span></span>
         <span></span>
@@ -41,7 +41,7 @@
       </div>
     </div>
   </nav>
-  
+
   <section id="about">
     <h2>À propos de moi</h2>
     <div class="about-content">
@@ -71,7 +71,7 @@
     </div>
     <a class="slide" href="#slide"><i class="fas fa-project-diagram"></i> Voir mes projets</a>
   </section>
-  
+
   <main id="slide">
     <div class="projects-intro">
       <h2>Mes réalisations</h2>
@@ -111,11 +111,11 @@
     </div>
     <a class="slide" href="#slide2"><i class="fas fa-envelope"></i> Contactez-moi</a>
   </main>
-  
+
   <footer id="slide2">
     <section id="contact">
       <h2 id="formulaire">Me contacter</h2>
-      
+
       <div class="contact-container">
         <div class="contact-form-wrapper">
           <form action="send_mail.php" method="POST" class="contact-form">
@@ -135,7 +135,7 @@
             <button type="submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
           </form>
         </div>
-        
+
         <div class="contact-info-wrapper">
           <div class="footer-contact-info">
             <h3>Coordonnées</h3>
@@ -144,9 +144,9 @@
               <p><i class="fab fa-linkedin"></i> <strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/yoan-deloustal-a10045337/" target="_blank" rel="noopener noreferrer">Yoan Deloustal</a></p>
               <p><i class="fas fa-map-marker-alt"></i> <strong>Localisation :</strong> Troyes</p>
             </div>
-            
+
             <div class="contact-divider"></div>
-            
+
             <div class="contact-social">
               <h4>Mon réseau professionnel</h4>
               <div class="contact-social-icons">
@@ -157,7 +157,7 @@
         </div>
       </div>
     </section>
-    
+
     <div class="footer-bottom">
       <div class="footer-container">
         <p>&copy; 2025 Deloustal Yoan. Tous droits réservés.</p>
@@ -182,7 +182,7 @@
       } else {
         nav.classList.remove('nav-scrolled');
       }
-      
+
       // Afficher/cacher le bouton de retour en haut
       const backToTop = document.getElementById('backToTop');
       if (window.scrollY > 300) {
